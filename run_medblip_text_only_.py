@@ -4,9 +4,9 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-from t5_text_only import TextOnlyReportGenerator
-from dataset_text_only import TextOnlyDataset, TextOnlyCollator
-from trainer_text_only import Trainer  
+from t5_generator import TextOnlyReportGenerator
+from dataset_text_only_ import TextOnlyDataset, TextOnlyCollator
+from trainer_text import Trainer  
 
 def set_seed(seed=42):
     random.seed(seed)
@@ -109,4 +109,5 @@ def main():
 if __name__ == "__main__":
     import multiprocessing
     multiprocessing.freeze_support()
+
     main()
