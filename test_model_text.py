@@ -2,9 +2,9 @@ import os
 import torch
 from torch.utils.data import DataLoader
 
-from t5_text_only import TextOnlyReportGenerator
-from dataset_text_only import TextOnlyDataset, TextOnlyCollator
-from trainer_text_only import Trainer
+from t5_generator import TextOnlyReportGenerator
+from dataset_text_only_ import TextOnlyDataset, TextOnlyCollator
+from trainer_text import Trainer
 
 
 def load_test_set(config):
@@ -62,4 +62,5 @@ def evaluate_final_model(model_checkpoint, output_dir):
 if __name__ == "__main__":
     CHECKPOINT_PATH = "E:/data_nour/checkpoints/ablation_text_only/epoch_49.pth"  
     OUTPUT_DIR = "E:/data_nour/final_evaluation_results" 
+
     evaluate_final_model(CHECKPOINT_PATH, OUTPUT_DIR)
