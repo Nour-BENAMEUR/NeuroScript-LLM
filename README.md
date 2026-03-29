@@ -10,6 +10,6 @@ Run the dataset_text_only_.py notebook to organize the dataset for training.
 ## T5_generator model
 Run the t5_generator.py notebook to load the T5 model and prepare it for report generation.
 ## Training of the model 
-Run the run_medblip_text_only_.py notebook to train the model.
+Run the text_only_principal.py notebook to train the model.
 ## Evaluation of the model
 Use the test_model_text.py notebook to test the model and compute performance metrics.
